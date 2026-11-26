@@ -111,35 +111,28 @@ details.idxm>summary::before,details.idxm[open]>summary::before{width:auto;heigh
 @media print{.idx,.idxm{display:none}body.has-idx{padding-left:0}.sec>h2,.sub>h3{position:static}}
 .fig{margin:14px auto;text-align:center}.fig svg{max-width:100%;height:auto}.fig figcaption{font-size:14px;color:var(--mut)}
 .fig svg text{fill:var(--fg)}
-/* roomier reading layout: more space between lines, steps and equations */
-body{font-size:17px;line-height:1.95}
-main{max-width:860px}
-p{margin:1.05em 0}
-ul,ol{margin:.9em 0;padding-left:1.7em}
-li{margin:.95em 0;line-height:1.95}
-li>p{margin:.5em 0}
-li>ul,li>ol{margin:.6em 0}
-.ans{padding-top:14px}
-.ans>p,.qtext>p{margin:1.15em 0}
-.ans strong:first-child{display:inline-block;margin-top:.5em}
-math{line-height:1.6;font-size:1.1em}
-math[display=block]{margin:14px 0;padding:10px 0}
-.mw{padding:5px 0;margin:0 1px}
-.box{margin:20px 0 22px;padding:6px 6px}
-.frow{padding:14px 18px}
-.q{padding:20px 24px;margin:32px 0}
-.qhead{margin-bottom:14px}
-table{margin:22px 0;line-height:1.7}
-th,td{padding:10px 13px}
-.fig{margin:26px auto}
-h2{margin:2.8em 0 1em}
-h3{margin:2.2em 0 .8em}
-@media (max-width:640px){body{font-size:16.5px;line-height:1.9}.q{padding:16px 14px}li{margin:.8em 0}}
-/* extra room where inline fractions sit in step lines */
-li{margin:1.3em 0;line-height:2.3}
-.ans p,.qtext p{line-height:2.2}
-math{padding:3px 2px;vertical-align:middle}
-ol>li{padding:2px 0}
+/* reading layout modelled on a clean chat-style page: 16px/26px text, one idea per line, centred equations */
+body{font-size:16px;line-height:1.625}
+main{max-width:760px}
+p{margin:16px 0}
+ul,ol{margin:8px 0 16px;padding-left:1.7em}
+li{margin:6px 0;line-height:1.625}
+li>p{margin:8px 0}
+li>ul,li>ol{margin:6px 0}
+.ans{padding-top:12px}
+.ans>p,.qtext>p{margin:16px 0}
+.ans>p>strong:first-child{display:block;margin-bottom:4px}
+math{line-height:1.5;font-size:1.1em}
+math[display=block]{margin:26px 0;padding:6px 0;white-space:nowrap}
+.q{padding:18px 22px;margin:28px 0}
+.qhead{margin-bottom:12px}
+.box{margin:22px 0}
+table{margin:20px 0;line-height:1.6}
+th,td{padding:9px 12px}
+.fig{margin:24px auto}
+h2{margin:2.4em 0 .9em}
+h3{margin:1.9em 0 .6em}
+@media (max-width:640px){body{font-size:16px}.q{padding:14px 12px}}
 @media print{.top,.jump,.fab{display:none}body{font-size:12pt;background:#fff;color:#000}.q,.box{break-inside:avoid;box-shadow:none}details>summary{display:none}}
 :root{--u:#b5652a}</style></head><body id="top" class="has-idx"><nav class="top"><a href="index.html">Home</a><span class="off" title="Not built yet"><span class="lg">Unit </span><span class="sh">U</span>1</span><span class="off" title="Not built yet"><span class="lg">Unit </span><span class="sh">U</span>2</span><a href="Unit-3_Concepts.html"><span class="lg">Unit </span><span class="sh">U</span>3</a><a href="Unit-4_Concepts.html" class="on"><span class="lg">Unit </span><span class="sh">U</span>4</a><span class="sep"></span><a href="Unit-4_Concepts.html"><span class="lg">Concepts</span><span class="sh">Concepts</span></a><a href="Unit-4_Formulas-and-Methods.html" class="on"><span class="lg">Formulas</span><span class="sh">Formulas</span></a><a href="Unit-4_Question-Bank-Solved.html"><span class="lg">Question Bank</span><span class="sh">QB</span></a><details class="idxm"><summary></summary><div class="idxp"><b>On this page</b><a class="i2" href="#sheet">Part 1: Formula sheet</a><a class="i3" href="#f-transform">A. Transformation of plane stress</a><a class="i3" href="#f-vessels">B. Pressure vessels</a><a class="i3" href="#f-energy">C. Energy methods</a><a class="i2" href="#methods">Part 2: Methods</a><a class="i3" href="#m1">M1. Stresses on a given plane (analytical)</a><a class="i3" href="#m2">M2. Principal stresses and maximum shear (analytical)</a><a class="i3" href="#m3">M3. Mohr&#x27;s circle</a><a class="i3" href="#m4">M4. Thin cylinder and sphere: stresses and design</a><a class="i3" href="#m5">M5. Strains and changes in dimensions</a><a class="i3" href="#m6">M6. Thick cylinder (Lamé)</a><a class="i3" href="#m7">M7. Strain energy of axial, bending and torsion members</a><a class="i3" href="#m8">M8. Deflection under a single load from energy</a><a class="i3" href="#m9">M9. Combined stress states (axial plus torsion; shell plus torque)</a><a class="i3" href="#which">Which method to pick</a></div></details></nav><aside class="idx"><b>On this page</b><a class="i2" href="#sheet">Part 1: Formula sheet</a><a class="i3" href="#f-transform">A. Transformation of plane stress</a><a class="i3" href="#f-vessels">B. Pressure vessels</a><a class="i3" href="#f-energy">C. Energy methods</a><a class="i2" href="#methods">Part 2: Methods</a><a class="i3" href="#m1">M1. Stresses on a given plane (analytical)</a><a class="i3" href="#m2">M2. Principal stresses and maximum shear (analytical)</a><a class="i3" href="#m3">M3. Mohr&#x27;s circle</a><a class="i3" href="#m4">M4. Thin cylinder and sphere: stresses and design</a><a class="i3" href="#m5">M5. Strains and changes in dimensions</a><a class="i3" href="#m6">M6. Thick cylinder (Lamé)</a><a class="i3" href="#m7">M7. Strain energy of axial, bending and torsion members</a><a class="i3" href="#m8">M8. Deflection under a single load from energy</a><a class="i3" href="#m9">M9. Combined stress states (axial plus torsion; shell plus torque)</a><a class="i3" href="#which">Which method to pick</a></aside><main><h1>Unit 4: Stress Transformation, Pressure Vessels and Energy Methods - Formulas and Methods</h1><p>Mechanics of Solids (UE25ME241A)</p><div class="jump"><a href="#sheet">Part 1: Formula sheet</a><a href="#methods">Part 2: Methods</a></div><p>This page has two parts: the <strong>formula sheet</strong> (everything on one page, with symbols, units, limits and sign convention) and the <strong>methods</strong> (a numbered recipe for each type of numerical question, with one solved example and a table to choose the method). Every formula comes from the Unit 4 lecture notes, slides or question bank. Examples cite the notes example, slide or question-bank number.</p>
 <p><strong>Units.</strong> Use N and mm (stresses in N/mm<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">^2</annotation></semantics></math></span> = MPa, <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span> and <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span> in N/mm<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">^2</annotation></semantics></math></span>; 1 GPa = 1000 N/mm<span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">^2</annotation></semantics></math></span>), or kN and m. Strain energy in N mm or J (1 J = 1000 N mm).</p>
